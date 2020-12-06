@@ -6,7 +6,22 @@ var aftrekken = document.getElementById("aftrekken");
 var vermenigvuldigen = document.getElementById("vermenigvuldigen");
 var delen = document.getElementById("delen");
 
-for(i=1; i<=10; i++){
-	var answer = arrayTwee[0] + arrayEen[0];
-optellen.innerHTML += arrayEen[0] + " + " + arrayTwee[0] + " = " + answer + "<br>";
+for(i=0; i<=9; i++){
+	var answer = arrayTwee[i] + arrayEen[i];
+optellen.innerHTML += arrayEen[i] + " + " + arrayTwee[i] + " = " + answer + "<br>";
+}
+
+for(i=0; i<=9; i++){
+	var answer1 = arrayTwee[i] - arrayEen[i];
+aftrekken.innerHTML += arrayTwee[i] + " - " + arrayEen[i] + " = " + answer1 + "<br>";
+}
+
+for(i=0; i<=9; i++){
+	var answer2 = arrayEen[i] * arrayTwee[i];
+vermenigvuldigen.innerHTML += arrayEen[i] + " * " + arrayTwee[i] + " = " + answer2 + "<br>";
+}
+
+for(i=0; i<=9; i++){
+	var answer3 = arrayTwee[i] / arrayEen[i];
+delen.innerHTML += arrayTwee[i] + " / " + arrayEen[i] + " = " + answer3 + "<br>";
 }
