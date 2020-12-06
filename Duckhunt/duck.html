@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <title>Duck Hunt</title>
+   <link rel="stylesheet" type="text/css" href="duck.css">
+</head>
+<body>
+
+	<div id="container" onclick="miss(event)">
+		<img id="duck" src="duck.gif" alt="duck" onclick="hit(event)">
+		<button id="easy" onclick="easyselect()">Easy</button>
+		<button id="medium" onclick="medselect()">Medium</button>
+		<button id="hard" onclick="hardselect()">Hard</button>
+		<img id="explosion" src="explosion.gif" style="display:none;"/>
+	</div>
+
+
+
+  	<script src="duck.js"></script>
+ </body>
+</html>
+
